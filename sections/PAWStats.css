@@ -1,0 +1,236 @@
+body { font: 10pt verdana,arial,helvetica,sans-serif; background-color: white }
+fini { 
+    font-size: 0.8em;
+    color: #666;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    color: blue;
+}
+/*==============================*/
+.lt { text-align: left !important}
+.inline { display: inline }
+.vsuper { vertical-align: super }
+.hdr, .ftr {
+    width: 7em;
+ }
+ .ellipsis, .elliphdr {
+    width: 26em;
+ }
+ .ellipsis {
+    display: table-caption !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hdrsort:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #333;
+}
+.hdrsort:active {
+    box-shadow: -1px -1px 2px #88F;
+}
+/* bgcolors: !important allows separate use of gradient */
+.itemtitle { background-color: #ECECEC !important }
+.uniq { background-color: #FFB055 !important }
+.visits { background-color: #E0DD00 !important; old: #F8E880 }
+.pages { background-color: #6699FF !important }
+.hits { background-color: #88F0FF !important }
+.robohits { background-color: #66D0DD !important }
+.bandwidth { background-color: #CC7799 !important; old: #00C4A5 }
+.average { background-color: #F0F0F0 !important }
+.collapse { visibility: collapse; line-height: 0 }
+ /* line-height used ONLY because certain "evergreen" browsers do not honor 'collapse' */
+/*==============================*/
+caption {
+    text-align: left;
+    font-weight: bold;
+    font-size: 12pt;
+}
+caption a {
+    text-decoration: none;
+}
+/*==============================*/
+table-scroller {
+    display: inline-block;
+    position:relative; 
+}
+table-insole {
+    display:block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 39em; /* ensure partially visible row, as cue on Mac/iOS */
+    margin-top:3em;
+    margin-bottom:1.8em;
+}
+table-scroller thead tr,
+table-scroller tfoot tr {
+    position:absolute; left:0; 
+    padding-right: 16px;
+    padding-left: 16px;
+}
+table-scroller thead tr {
+    top:0;
+    height:3em;
+}
+table-scroller tfoot tr {
+    bottom:0;
+    height:1.8em;
+}
+table-scroller thead tr {
+    background: linear-gradient(to bottom,
+        rgba(128,128,128,0.1),
+        rgba(255,255,255,0.2),
+        rgba(0,0,0,0),
+        rgba(128,128,128,0),
+        rgba(128,128,128,0.2) );
+    background-color: #ECECEC !important
+}
+table-scroller thead td {
+    height: 2.8em;
+}
+/*==============================*/
+table.t-sortstripe {
+    display: inline-table;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 10pt;
+    border: 1px solid #888;
+    border-radius: 0.3em;
+    text-align: center;
+}
+.t-sortstripe thead td {
+    white-space: nowrap;
+    border-bottom-right-radius: 0.75em;
+    background: linear-gradient(to bottom,
+        rgba(128,128,128,0.1),
+        rgba(255,255,255,0.2),
+        rgba(0,0,0,0),
+        rgba(128,128,128,0),
+        rgba(128,128,128,0.2) );
+}
+.t-sortstripe tbody td {
+    text-align: right;
+    white-space: nowrap;
+}
+.t-sortstripe tbody tr:nth-child(2n) td {
+  background: #D9E9FF;
+}
+.t-sortstripe tbody tr:nth-child(2n+1) td {
+  background: #FFF;
+}
+/*==============================*/
+table.t-data {
+    display: inline-block; /* must use inline-block for cross-browser uniformity (*Safari*) */
+    vertical-align: top; /* ensure side-by-side tables align to top (across all browsers) */
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 10pt;
+    border-collapse: collapse;
+}
+.t-data thead th, .t-data tbody td {
+    border: 1px solid #CCC;
+}
+.t-data thead td {
+    text-align: center;
+}
+.t-data tbody td {
+    text-align: right;
+    white-space: nowrap;
+}
+.t-data tbody.ctr td {
+    text-align: center;
+}
+.t-data tfoot td {
+    text-align: right;
+}
+.t-data tfoot td:first-child {
+    text-align: left;
+}
+/*==============================*/
+table.t-chart {
+    display: inline-table;
+    font-family: verdana,arial,helvetica,sans-serif;
+    font-size: 10pt;
+    border: 1px solid black;
+}
+.t-chart tr.tr-chart {
+    vertical-align: bottom;
+    height: 100px;
+}
+.t-chart thead th, .t-chart tbody td, .t-chart tfoot td {
+    white-space: nowrap;
+    text-align: center;
+    padding: 1px;
+}
+/*==============================*/
+barcol {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 5px;
+    height: 18px;
+    background: linear-gradient(to right,
+        rgba(0,0,0,0.3), 
+        rgba(255,255,255,0.8), 
+        rgba(0,0,0,0), 
+        rgba(128,128,128,0), 
+        rgba(0,0,0,0.8) );
+    background-color: #00F;
+}
+/*==============================*/
+h2[section] {
+    text-align: center;
+    font-size: 1.2em;
+    background: linear-gradient(to bottom,
+        rgba(255,255,255,0.2),
+        rgba(0,0,0,0),
+        rgba(128,128,128,0.18),
+        rgba(0,0,0,0.2) );  
+    background-color: #F0F0F0;
+    border: 2px solid #BBB;
+    margin: 0;
+}
+h2[section] btn {
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    background: linear-gradient(to bottom,
+        rgba(255,255,255,0.2),
+        rgba(0,0,0,0),
+        rgba(128,128,128,0.18),
+        rgba(0,0,0,0.2) );  
+    background-color: #FFF;
+    border: 1px solid #888;
+    width: 1.0em;
+    vertical-align: middle;
+    text-shadow: 0px 1px #000;
+}
+section-frame {
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+    border: 2px solid #BBB;
+    padding: 1em;
+}
+@media screen and (max-width: 880px) {
+    section-frame {
+        border: none;
+        padding: 0;
+    }
+}
+/*==============================*/
+#mapinfo {
+    position: absolute;
+    width: 125px;
+    background-color: rgba(200,200,100,0.7);
+    border-radius: 0.3em
+    padding: 5x;
+    left: 200px;
+    top: 300px;
+    text-align: center;
+    visibility: hidden;
+}
+/*==============================*/
+
